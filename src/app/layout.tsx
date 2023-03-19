@@ -1,3 +1,4 @@
+import NavBar from "@component/components/NavBar/NavBar";
 import { Public_Sans } from "next/font/google";
 
 import "../globals.css";
@@ -17,6 +18,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={font.className}>
+				<NavBar logo="/logo.svg" alt="easybank-logo" />
 				<h1 className="clipped">Easybank</h1>
 				{children}
 			</body>
