@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import SideMenu from "../SideMenu/SideMenu";
 
 import styles from "./NavBar.module.css";
@@ -30,7 +31,9 @@ function NavBar({ logo, alt }: { logo: string; alt: string }) {
 	return (
 		<header className={styles["nav-bar"]}>
 			<nav>
-				<Image src={logo} alt={alt} width={"100"} height={"20"} />
+				<Link href={"/"}>
+					<Image src={logo} alt={alt} width={100} height={20} />
+				</Link>
 				<SideMenu links={links} />
 			</nav>
 		</header>

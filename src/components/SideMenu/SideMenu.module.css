@@ -1,0 +1,10 @@
+.sidemenu button {
+	background: none;
+	border: none;
+}
+
+.sidemenu button img {
+	object-fit: contain;
+	max-width: 24px;
+	width: 100%;
+}
