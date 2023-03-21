@@ -1,0 +1,5 @@
+.main-home img {
+	object-fit: contain;
+	width: 100vw;
+	height: auto;
+}

@@ -26,13 +26,21 @@ function SideMenu({ links }: { links: { path: string; label: string }[] }) {
 			</button>
 
 			{open ? (
-				<ul>
-					{links.map((link: { path: string; label: string }, idx: number) => (
-						<li key={idx}>
-							<Link href={link.path}>{link.label}</Link>
-						</li>
-					))}
-				</ul>
+				<>
+					<span>
+						<ul>
+							{links.map(
+								(link: { path: string; label: string }, idx: number) => (
+									<li key={idx}>
+										<Link href={link.path}>{link.label}</Link>
+									</li>
+								),
+							)}
+						</ul>
+					</span>
+
+					<div className={styles.background} />
+				</>
 			) : (
 				<></>
 			)}

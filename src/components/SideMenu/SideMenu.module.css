@@ -8,3 +8,40 @@
 	max-width: 24px;
 	width: 100%;
 }
+
+.background {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(34 34 146 / 27%);
+	right: 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 4;
+}
+
+.sidemenu span {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+
+.sidemenu ul {
+	background-color: white;
+	width: 87%;
+	border-radius: 4px;
+	box-shadow: 0px 2px 9px #4b484829;
+}
+
+.sidemenu ul li {
+	list-style: none;
+}
+
+.sidemenu a {
+	text-decoration: none;
+}
