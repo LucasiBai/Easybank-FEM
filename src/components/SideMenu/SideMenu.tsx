@@ -25,25 +25,23 @@ function SideMenu({ links }: { links: { path: string; label: string }[] }) {
 				/>
 			</button>
 
-			{open ? (
-				<>
-					<span>
-						<ul>
-							{links.map(
-								(link: { path: string; label: string }, idx: number) => (
-									<li key={idx} onClick={handleOnSwitch}>
-										<Link href={link.path}>{link.label}</Link>
-									</li>
-								),
-							)}
-						</ul>
-					</span>
+			<div style={!open ? { pointerEvents: "none" } : {}}>
+				<span className={open ? styles.active : ""}>
+					<ul>
+						{links.map((link: { path: string; label: string }, idx: number) => (
+							<li key={idx} onClick={handleOnSwitch}>
+								<Link href={link.path}>{link.label}</Link>
+							</li>
+						))}
+					</ul>
+				</span>
 
-					<div className={styles.background} onClick={handleOnSwitch} />
-				</>
-			) : (
-				<></>
-			)}
+				<div
+					style={open ? { opacity: 1 } : { opacity: 0 }}
+					className={styles.background}
+					onClick={handleOnSwitch}
+				/>
+			</div>
 		</div>
 	);
 }

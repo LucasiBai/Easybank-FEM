@@ -19,6 +19,7 @@
 	bottom: 0;
 	left: 0;
 	z-index: 4;
+	transition: opacity ease-in 0.4s;
 }
 
 .sidemenu span {
@@ -26,12 +27,20 @@
 	justify-content: center;
 	position: absolute;
 	width: 100vw;
-	top: 5rem;
+	top: -100vh;
 	left: 0;
 	z-index: 5;
+	pointer-events: none;
+	transition: top ease-in 0.4s;
+}
+
+.sidemenu span.active {
+	top: 5rem;
+	transition: top ease-in 0.4s;
 }
 
 .sidemenu ul {
+	pointer-events: all;
 	background-color: white;
 	width: 87%;
 	border-radius: 4px;
