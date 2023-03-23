@@ -18,7 +18,7 @@ function SideMenu({ links }: { links: { path: string; label: string }[] }) {
 		<div className={styles.sidemenu}>
 			<button onClick={handleOnSwitch}>
 				<Image
-					src="/icon-hamburger.svg"
+					src={!open ? "/icon-hamburger.svg" : "/icon-close.svg"}
 					alt="nav-button"
 					width={24}
 					height={20}
