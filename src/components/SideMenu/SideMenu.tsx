@@ -10,13 +10,13 @@ import styles from "./SideMenu.module.css";
 function SideMenu({ links }: { links: { path: string; label: string }[] }) {
 	const [open, setOpen] = useState(false);
 
-	const handleOnClickBurger = () => {
+	const handleOnSwitch = () => {
 		setOpen((prev) => !prev);
 	};
 
 	return (
 		<div className={styles.sidemenu}>
-			<button onClick={handleOnClickBurger}>
+			<button onClick={handleOnSwitch}>
 				<Image
 					src="/icon-hamburger.svg"
 					alt="nav-button"
@@ -31,7 +31,7 @@ function SideMenu({ links }: { links: { path: string; label: string }[] }) {
 						<ul>
 							{links.map(
 								(link: { path: string; label: string }, idx: number) => (
-									<li key={idx}>
+									<li key={idx} onClick={handleOnSwitch}>
 										<Link href={link.path}>{link.label}</Link>
 									</li>
 								),
@@ -39,7 +39,7 @@ function SideMenu({ links }: { links: { path: string; label: string }[] }) {
 						</ul>
 					</span>
 
-					<div className={styles.background} />
+					<div className={styles.background} onClick={handleOnSwitch} />
 				</>
 			) : (
 				<></>

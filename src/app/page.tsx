@@ -1,10 +1,19 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
+import mobilePic from "../../public/image-mockups.png";
+
 export default function Home() {
 	return (
 		<main className={styles["main-home"]}>
-			<Image src="/image-mockups.png" alt="mockups" width={375} height={100} />
+			<span>
+				<Image
+					src={mobilePic}
+					alt="mockups"
+					objectFit="contain"
+					layout="fill"
+				/>
+			</span>
 		</main>
 	);
 }
