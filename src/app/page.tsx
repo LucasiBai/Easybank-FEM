@@ -2,18 +2,34 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 import mobilePic from "../../public/image-mockups.png";
+import backgroundMobile from "../../public/bg-intro-mobile.svg";
 
 export default function Home() {
 	return (
 		<main className={styles["main-home"]}>
-			<span>
-				<Image
-					src={mobilePic}
-					alt="mockups"
-					objectFit="contain"
-					layout="fill"
-				/>
-			</span>
+			<section>
+				<article>
+					<div className={styles["image-container"]}>
+						<Image
+							src={backgroundMobile}
+							alt="mockups"
+							objectFit="cover"
+							objectPosition="center"
+							layout="fill"
+						/>
+						<span>
+							<Image
+								src={mobilePic}
+								alt="mockups"
+								objectFit="cover"
+								objectPosition="bottom center"
+								layout="fill"
+							/>
+						</span>
+					</div>
+					<h2>Next generation digital banking</h2>
+				</article>
+			</section>
 		</main>
 	);
 }

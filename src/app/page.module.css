@@ -1,7 +1,29 @@
-.main-home span {
+.main-home article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.1rem;
+}
+
+.main-home article h2 {
+	text-align: center;
+	font-weight: 300;
+	font-size: 38px;
+	color: #242424;
+}
+
+.image-container {
+	position: relative;
+	height: 300px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.image-container span {
 	display: block;
 	position: relative;
-	width: 100vw;
-	height: 500px;
-	background-color: blue;
+	height: 100%;
+	width: 92%;
 }
