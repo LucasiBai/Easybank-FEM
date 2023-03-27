@@ -2,14 +2,23 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 1.1rem;
+	gap: 1.4rem;
 }
 
 .main-home article h2 {
 	text-align: center;
 	font-weight: 300;
-	font-size: 38px;
+	font-size: 39px;
 	color: #242424;
+	margin: 0 1rem;
+}
+
+.main-home article p {
+	text-align: center;
+	font-size: 15px;
+	color: #0000006e;
+	max-width: 330px;
+	line-height: 25px;
 }
 
 .image-container {
