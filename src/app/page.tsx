@@ -11,25 +11,25 @@ const articleData: { icon: string; header: string; content: string }[] = [
 		icon: "/icon-online.svg",
 		header: "Online Banking",
 		content:
-			"We leverage Open Banking to turn yout bank account into your financial hub. Control your finances like never before.",
+			"Our moderm web and mobile applications allow you to keep track of your finances wherever you are in the world.",
 	},
 	{
 		icon: "/icon-budgeting.svg",
 		header: "Simple Budgeting",
 		content:
-			"We leverage Open Banking to turn yout bank account into your financial hub. Control your finances like never before.",
+			"See exactly where your money goes each month. Receive notifications when you're close to your hitting limits",
 	},
 	{
 		icon: "/icon-onboarding.svg",
 		header: "Fast Onboarding",
 		content:
-			"We leverage Open Banking to turn yout bank account into your financial hub. Control your finances like never before.",
+			"We don't do branches. Open your account in minutes online and start taking control of your finances right away.",
 	},
 	{
 		icon: "/icon-api.svg",
 		header: "Open API",
 		content:
-			"We leverage Open Banking to turn yout bank account into your financial hub. Control your finances like never before.",
+			"Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier",
 	},
 ];
 
