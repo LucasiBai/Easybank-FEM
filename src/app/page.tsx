@@ -5,6 +5,7 @@ import mobilePic from "../../public/image-mockups.png";
 import backgroundMobile from "../../public/bg-intro-mobile.svg";
 import GradientButton from "@component/components/GradientButton/GradientButton";
 import IconArticle from "@component/components/IconArticle/IconArticle";
+import CardList from "@component/components/CardList/CardList";
 
 const articleData: { icon: string; header: string; content: string }[] = [
 	{
@@ -30,6 +31,35 @@ const articleData: { icon: string; header: string; content: string }[] = [
 		header: "Open API",
 		content:
 			"Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier",
+	},
+];
+
+const lastArticles: {
+	author: string;
+	header: string;
+	content: string;
+	thumbnail: string;
+}[] = [
+	{
+		author: "Claire Robinson",
+		header: "Receive money in any currency with no fees",
+		content:
+			"The world is getting smaller and we're becoming more mobile. So why should you be forced to only receive money in a single ...",
+		thumbnail: "/image-currency.jpg",
+	},
+	{
+		author: "Claire Robinson",
+		header: "Receive money in any currency with no fees",
+		content:
+			"The world is getting smaller and we're becoming more mobile. So why should you be forced to only receive money in a single ...",
+		thumbnail: "/image-currency.jpg",
+	},
+	{
+		author: "Claire Robinson",
+		header: "Receive money in any currency with no fees",
+		content:
+			"The world is getting smaller and we're becoming more mobile. So why should you be forced to only receive money in a single ...",
+		thumbnail: "/image-currency.jpg",
 	},
 ];
 
@@ -82,6 +112,11 @@ export default function Home() {
 						</IconArticle>
 					))}
 				</section>
+			</section>
+
+			<section className={styles["last-articles"]}>
+				<h3>Lastest Articles</h3>
+				<CardList cardsData={lastArticles} />
 			</section>
 		</main>
 	);
