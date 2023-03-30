@@ -15,7 +15,7 @@
 	height: 100vh;
 	background-color: rgb(59 59 98 / 35%);
 	right: 0;
-	top: 2.7rem;
+	top: 3.9rem;
 	bottom: 0;
 	left: 0;
 	z-index: 4;
@@ -35,7 +35,7 @@
 }
 
 .sidemenu span.active {
-	top: 4.2rem;
+	top: 5.4rem;
 	transition: top ease-in 0.4s;
 }
 

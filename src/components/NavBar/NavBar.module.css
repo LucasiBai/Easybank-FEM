@@ -1,11 +1,10 @@
 .nav-bar {
-	background-color: hsl(0, 0%, 100%);
 	position: relative;
 }
 .nav-bar nav {
 	display: flex;
 	justify-content: space-between;
-	margin: 1.2rem 1.5rem;
+	padding: 1.2rem 1.5rem;
 }
 
 .nav-bar img {

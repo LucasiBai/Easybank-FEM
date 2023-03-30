@@ -15,16 +15,14 @@ function CardArticle({
 }) {
 	return (
 		<article className={styles["card-article"]}>
-			<Image
-				src={thumbnail}
-				alt={header}
-				width={60}
-				height={40}
-				objectFit={"cover"}
-			/>
-			<h5>{author}</h5>
-			<h4>{header}</h4>
-			<p>{content}</p>
+			<div>
+				<Image src={thumbnail} alt={header} objectFit={"cover"} fill={true} />
+			</div>
+			<span>
+				<h5>By {author}</h5>
+				<h4>{header}</h4>
+				<p className={styles["card-paragraph"]}>{content}</p>
+			</span>
 		</article>
 	);
 }
