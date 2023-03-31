@@ -44,22 +44,29 @@ const lastArticles: {
 		author: "Claire Robinson",
 		header: "Receive money in any currency with no fees",
 		content:
-			"The world is getting smaller and we're becoming more mobile. So why should you be forced to only receive money in a single ...",
+			"The world is getting smaller and we're becoming more mobile. So why should you be forced to only receive money in a single...",
 		thumbnail: "/image-currency.jpg",
 	},
 	{
-		author: "Claire Robinson",
-		header: "Receive money in any currency with no fees",
+		author: "Wilson Hutton",
+		header: "Treat yourself without worrying about money",
 		content:
-			"The world is getting smaller and we're becoming more mobile. So why should you be forced to only receive money in a single ...",
-		thumbnail: "/image-currency.jpg",
+			"Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you...",
+		thumbnail: "/image-restaurant.jpg",
+	},
+	{
+		author: "Wilson Hutton",
+		header: "Take your Easybank card wherever you go",
+		content:
+			"We want to enjoy your travels. This is why we don't charge any fees on purchases while you're abroad. We'll even show you...",
+		thumbnail: "/image-plane.jpg",
 	},
 	{
 		author: "Claire Robinson",
-		header: "Receive money in any currency with no fees",
+		header: "Our invite-only Beta accounts are now live!",
 		content:
-			"The world is getting smaller and we're becoming more mobile. So why should you be forced to only receive money in a single ...",
-		thumbnail: "/image-currency.jpg",
+			"After a lot of hard work by the whole team, we're excited to launch our closed beta. It's easy to request an invite through the site...",
+		thumbnail: "/image-confetti.jpg",
 	},
 ];
 

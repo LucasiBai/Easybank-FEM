@@ -2,6 +2,9 @@
 	background-color: white;
 	border-radius: 5px;
 	gap: 1.7rem;
+	padding-bottom: 2.4rem !important;
+	max-width: 400px;
+	width: 85%;
 }
 .card-article img {
 	border-radius: 5px 5px 0 0;
