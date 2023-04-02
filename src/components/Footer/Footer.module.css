@@ -1,0 +1,23 @@
+.footer {
+	background-color: hsl(233, 26%, 24%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem 0;
+	gap: 1rem;
+}
+
+.footer img {
+	width: 100%;
+	max-width: 140px;
+	object-fit: contain;
+}
+
+.media ul {
+	display: flex;
+	gap: 1rem;
+}
+
+.media li {
+	list-style-type: none;
+}
