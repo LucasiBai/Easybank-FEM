@@ -16,6 +16,10 @@
 	padding: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
 body {
 	background-color: #f9f9f9;
 }

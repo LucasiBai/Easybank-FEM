@@ -39,8 +39,12 @@ const socialMedia = [
 	},
 ];
 const footerLinks: { path: string; label: string }[] = [
-	{ path: "ee", label: "ee" },
-	{ path: "ee", label: "ee" },
+	{ path: "/", label: "About Us" },
+	{ path: "/", label: "Contact" },
+	{ path: "/", label: "Blog" },
+	{ path: "/", label: "Careers" },
+	{ path: "/", label: "Support" },
+	{ path: "/", label: "Privacy Policy" },
 ];
 
 export default function RootLayout({
@@ -55,7 +59,7 @@ export default function RootLayout({
 				<h1 className="clipped">Easybank</h1>
 				{children}
 				<Footer
-					logo="/logo.svg"
+					logo="/logo-invert.svg"
 					alt="easybank-logo"
 					socialMedia={socialMedia}
 					links={footerLinks}
