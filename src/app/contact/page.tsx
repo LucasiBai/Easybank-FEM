@@ -1,3 +1,5 @@
+import Home from "../page";
+
 export default function page() {
-	return <div>contact</div>;
+	return <Home />;
 }

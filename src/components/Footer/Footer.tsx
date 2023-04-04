@@ -16,19 +16,21 @@ function Footer({
 }) {
 	return (
 		<footer className={styles.footer}>
-			<Image src={logo} alt={alt} width={100} height={20} />
+			<Link href={"/"}>
+				<Image src={logo} alt={alt} width={100} height={20} />
+			</Link>
 
 			<ul className={styles.media}>
 				{socialMedia.map((media, idx) => (
 					<li key={idx}>
-						<a href={media.href}>
+						<Link href={media.href} target="_blank">
 							<Image
 								src={media.icon}
 								alt={media.media}
 								width={24}
 								height={24}
 							/>
-						</a>
+						</Link>
 					</li>
 				))}
 			</ul>

@@ -13,6 +13,9 @@ function SideMenu({ links }: { links: { path: string; label: string }[] }) {
 	const handleOnSwitch = () => {
 		setOpen((prev) => !prev);
 	};
+	const body = document.querySelector("body");
+
+	const bodyHeight: number = body ? body.clientHeight - 66.4 : 0;
 
 	return (
 		<div className={styles.sidemenu}>
@@ -37,7 +40,11 @@ function SideMenu({ links }: { links: { path: string; label: string }[] }) {
 				</span>
 
 				<div
-					style={open ? { opacity: 1 } : { opacity: 0 }}
+					style={
+						open
+							? { opacity: 1, height: bodyHeight }
+							: { opacity: 0, height: bodyHeight }
+					}
 					className={styles.background}
 					onClick={handleOnSwitch}
 				/>

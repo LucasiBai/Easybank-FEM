@@ -54,7 +54,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={font.className}>
+			<body
+				className={font.className}
+				style={{ display: "flex", flexDirection: "column", minHeight: "110vh" }}
+			>
 				<NavBar logo="/logo.svg" alt="easybank-logo" />
 				<h1 className="clipped">Easybank</h1>
 				{children}
