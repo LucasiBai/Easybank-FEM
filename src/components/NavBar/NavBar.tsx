@@ -34,7 +34,9 @@ function NavBar({ logo, alt }: { logo: string; alt: string }) {
 				<Link href={"/"}>
 					<Image src={logo} alt={alt} width={100} height={20} />
 				</Link>
-				<SideMenu links={links} />
+				<div className={styles.navbutton}>
+					<SideMenu links={links} />
+				</div>
 			</nav>
 		</header>
 	);

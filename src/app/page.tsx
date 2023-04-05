@@ -74,7 +74,7 @@ export default function Home() {
 	return (
 		<main className={styles["main-home"]}>
 			<section>
-				<article>
+				<article className={styles["main-article"]}>
 					<div className={styles["image-container"]}>
 						<Image
 							src={backgroundMobile}
@@ -93,13 +93,15 @@ export default function Home() {
 							/>
 						</span>
 					</div>
-					<h2>Next generation digital banking</h2>
-					<p>
-						Take your financial life online. Your Easybank account will be a
-						one-stop-shop for spending, saving, budgeting, investing, and much
-						more
-					</p>
-					<GradientButton>Request Invite</GradientButton>
+					<article style={{ paddingBottom: 0 }}>
+						<h2>Next generation digital banking</h2>
+						<p>
+							Take your financial life online. Your Easybank account will be a
+							one-stop-shop for spending, saving, budgeting, investing, and much
+							more
+						</p>
+						<GradientButton>Request Invite</GradientButton>
+					</article>
 				</article>
 			</section>
 

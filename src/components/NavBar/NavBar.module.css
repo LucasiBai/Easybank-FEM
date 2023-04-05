@@ -12,3 +12,9 @@
 	max-width: 140px;
 	object-fit: contain;
 }
+
+@media only screen and (min-width: 576px) {
+	.navbutton {
+		display: none;
+	}
+}

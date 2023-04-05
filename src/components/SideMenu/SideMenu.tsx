@@ -15,7 +15,7 @@ function SideMenu({ links }: { links: { path: string; label: string }[] }) {
 	};
 	const body = document.querySelector("body");
 
-	const bodyHeight: number = body ? body.clientHeight - 66.4 : 0;
+	const bodyHeight: number = body ? body.clientHeight - 62.4 : 0;
 
 	return (
 		<div className={styles.sidemenu}>
