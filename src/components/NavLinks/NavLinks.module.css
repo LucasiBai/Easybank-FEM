@@ -1,0 +1,13 @@
+.navlinks {
+	display: flex;
+	gap: 1.7rem;
+}
+
+.navlinks li {
+	list-style: none;
+}
+
+.navlinks a {
+	font-size: 15px;
+	color: gray;
+}

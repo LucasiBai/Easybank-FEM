@@ -71,8 +71,17 @@
 }
 
 @media only screen and (min-width: 576px) {
+	.main-home section {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	.main-home article {
+		max-width: 1440px;
+	}
 	.main-home .main-article {
 		flex-direction: row-reverse;
+		width: 100%;
 	}
 
 	.main-article article {

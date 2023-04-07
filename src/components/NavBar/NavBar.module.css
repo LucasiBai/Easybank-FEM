@@ -1,5 +1,6 @@
 .nav-bar {
 	position: relative;
+	background-color: white;
 }
 .nav-bar nav {
 	display: flex;
@@ -13,8 +14,24 @@
 	object-fit: contain;
 }
 
+.desktop {
+	display: none;
+}
+
 @media only screen and (min-width: 576px) {
+	.desktop {
+		display: flex;
+	}
 	.navbutton {
 		display: none;
+	}
+	.nav-bar {
+		display: flex;
+		justify-content: center;
+	}
+	.nav-bar nav {
+		max-width: 1110px;
+		width: 100%;
+		align-items: center;
 	}
 }
