@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 
 import mobilePic from "../../public/image-mockups.png";
 import backgroundMobile from "../../public/bg-intro-mobile.svg";
+import backgroundDesktop from "../../public/bg-intro-desktop.svg";
 import GradientButton from "@component/components/GradientButton/GradientButton";
 import IconArticle from "@component/components/IconArticle/IconArticle";
 import CardList from "@component/components/CardList/CardList";
@@ -76,13 +77,26 @@ export default function Home() {
 			<section>
 				<article className={styles["main-article"]}>
 					<div className={styles["image-container"]}>
-						<Image
-							src={backgroundMobile}
-							alt="mockups"
-							objectFit="cover"
-							objectPosition="center"
-							layout="fill"
-						/>
+						<div className={styles.mobile}>
+							<Image
+								src={backgroundMobile}
+								alt="mockups"
+								objectFit="cover"
+								objectPosition="center"
+								layout="fill"
+							/>
+						</div>
+
+						<div className={styles.desktop}>
+							<Image
+								src={backgroundDesktop}
+								alt="mockups"
+								objectFit="cover"
+								objectPosition="-50px -208px"
+								layout="fill"
+							/>
+						</div>
+
 						<span>
 							<Image
 								src={mobilePic}

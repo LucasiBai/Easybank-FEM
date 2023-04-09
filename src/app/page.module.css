@@ -70,7 +70,18 @@
 	gap: 2rem;
 }
 
+.desktop {
+	display: none;
+}
+
 @media only screen and (min-width: 576px) {
+	.mobile {
+		display: none;
+	}
+
+	.desktop {
+		display: block;
+	}
 	.main-home section {
 		display: flex;
 		align-items: center;
@@ -82,6 +93,7 @@
 	.main-home .main-article {
 		flex-direction: row-reverse;
 		width: 100%;
+		padding: 0;
 	}
 
 	.main-article article {
@@ -96,5 +108,17 @@
 	.main-home article p {
 		font-size: 20px;
 		text-align: start;
+	}
+
+	.image-container {
+		width: 51vw;
+		height: 646px;
+	}
+	.desktop img {
+		height: 100%;
+		width: 164%;
+		inset: 0px;
+		object-fit: cover;
+		object-position: -50px -240px;
 	}
 }

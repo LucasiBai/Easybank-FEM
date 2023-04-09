@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -10,12 +10,17 @@ import styles from "./SideMenu.module.css";
 function SideMenu({ links }: { links: { path: string; label: string }[] }) {
 	const [open, setOpen] = useState(false);
 
+	const [bodyHeight, setBodyHeight] = useState(0);
+
 	const handleOnSwitch = () => {
 		setOpen((prev) => !prev);
 	};
-	const body = document.querySelector("body");
 
-	const bodyHeight: number = body ? body.clientHeight - 62.4 : 0;
+	useEffect(() => {
+		const body = document.querySelector("body");
+
+		setBodyHeight(body ? body.clientHeight - 62.4 : 0);
+	}, []);
 
 	return (
 		<div className={styles.sidemenu}>
