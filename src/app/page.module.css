@@ -82,6 +82,7 @@
 	.desktop {
 		display: block;
 	}
+
 	.main-home section {
 		display: flex;
 		align-items: center;
@@ -90,6 +91,8 @@
 	.main-home article {
 		max-width: 1440px;
 	}
+
+	/* Main Article css */
 	.main-home .main-article {
 		flex-direction: row-reverse;
 		width: 100%;
@@ -98,27 +101,44 @@
 
 	.main-article article {
 		align-items: flex-start;
+		gap: 2rem;
 	}
 
 	.main-home article h2 {
-		max-width: 560px;
-		font-size: 53px;
+		max-width: 515px;
+		font-size: 56px;
 		text-align: start;
+		line-height: 59px;
 	}
 	.main-home article p {
-		font-size: 20px;
+		font-size: 19px;
 		text-align: start;
+		max-width: 480px;
 	}
 
 	.image-container {
 		width: 51vw;
 		height: 646px;
+		overflow: hidden;
 	}
 	.desktop img {
-		height: 100%;
-		width: 164%;
-		inset: 0px;
-		object-fit: cover;
-		object-position: -50px -240px;
+		height: 100% !important;
+		width: 164% !important;
+		inset: 0px !important;
+		object-fit: cover !important;
+		object-position: -50px -240px !important;
+	}
+
+	/* Subsection Article css */
+	.sub-section article {
+		align-items: flex-start;
+	}
+	.sub-section section {
+		flex-direction: row;
+	}
+
+	/* Last Articles css */
+	.last-articles section {
+		flex-direction: row;
 	}
 }

@@ -80,7 +80,7 @@ export default function Home() {
 						<div className={styles.mobile}>
 							<Image
 								src={backgroundMobile}
-								alt="mockups"
+								alt="easybank-background"
 								objectFit="cover"
 								objectPosition="center"
 								layout="fill"
@@ -90,7 +90,7 @@ export default function Home() {
 						<div className={styles.desktop}>
 							<Image
 								src={backgroundDesktop}
-								alt="mockups"
+								alt="easybank-background"
 								objectFit="cover"
 								objectPosition="-50px -208px"
 								layout="fill"
