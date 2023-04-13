@@ -4,10 +4,34 @@
 }
 
 .navlinks li {
+	position: relative;
 	list-style: none;
+	overflow: hidden;
+}
+
+.navlinks li:hover {
+	overflow: inherit;
 }
 
 .navlinks a {
 	font-size: 15px;
 	color: gray;
+}
+
+.navlinks a:hover {
+	color: black;
+}
+
+.navlinks hr {
+	position: absolute;
+	bottom: -32px;
+
+	background: linear-gradient(
+		132deg,
+		rgb(0 220 78) 0%,
+		rgba(15, 198, 235, 1) 100%
+	);
+	border: none;
+	height: 3px;
+	width: 100%;
 }

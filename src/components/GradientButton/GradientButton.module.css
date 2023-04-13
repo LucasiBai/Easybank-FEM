@@ -1,7 +1,12 @@
 .gradient-button {
+	background-color: white;
+	border-radius: 111px;
+	overflow: hidden;
+}
+
+.gradient-button button {
 	font-size: 14px;
 	padding: 0.9rem 2rem;
-	border-radius: 111px;
 	color: white;
 	font-weight: 600;
 	border: none;
@@ -11,7 +16,7 @@
 		rgba(15, 198, 235, 1) 100%
 	);
 }
-.gradient-button:hover {
+.gradient-button button:hover {
 	opacity: 0.5;
 	cursor: pointer;
 }

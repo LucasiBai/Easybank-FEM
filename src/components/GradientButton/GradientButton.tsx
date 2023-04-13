@@ -11,9 +11,9 @@ function GradientButton({
 	onClick?: MouseEventHandler<HTMLButtonElement>;
 }) {
 	return (
-		<button className={style["gradient-button"]} onClick={onClick}>
-			{children}
-		</button>
+		<span className={style["gradient-button"]}>
+			<button onClick={onClick}>{children}</button>
+		</span>
 	);
 }
 

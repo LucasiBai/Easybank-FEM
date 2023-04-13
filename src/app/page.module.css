@@ -139,6 +139,10 @@
 	}
 
 	/* Subsection Article css */
+	.sub-section {
+		padding: 6rem 0;
+	}
+
 	.sub-section article {
 		align-items: flex-start;
 		width: 100%;
@@ -153,9 +157,14 @@
 	}
 
 	/* Last Articles css */
+	.last-articles {
+		gap: 2.7rem;
+	}
+
 	.last-articles section {
 		flex-direction: row;
 		align-items: flex-start;
 		justify-content: center;
+		gap: 1.7rem;
 	}
 }
