@@ -2,6 +2,7 @@
 	background-color: white;
 	border-radius: 111px;
 	overflow: hidden;
+	padding: 0;
 }
 
 .gradient-button button {
