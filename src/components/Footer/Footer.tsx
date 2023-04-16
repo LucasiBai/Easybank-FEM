@@ -18,33 +18,35 @@ function Footer({
 		<footer className={styles.footer}>
 			<span>
 				<div>
-					<Link href={"/"}>
-						<Image src={logo} alt={alt} width={100} height={20} />
-					</Link>
+					<div>
+						<Link href={"/"}>
+							<Image src={logo} alt={alt} width={100} height={20} />
+						</Link>
 
-					<ul className={styles.media}>
-						{socialMedia.map((media, idx) => (
+						<ul className={styles.media}>
+							{socialMedia.map((media, idx) => (
+								<li key={idx}>
+									<Link href={media.href} target="_blank">
+										<Image
+											src={media.icon}
+											alt={media.media}
+											width={24}
+											height={24}
+										/>
+									</Link>
+								</li>
+							))}
+						</ul>
+					</div>
+
+					<ul className={styles.links}>
+						{links.map((link, idx) => (
 							<li key={idx}>
-								<Link href={media.href} target="_blank">
-									<Image
-										src={media.icon}
-										alt={media.media}
-										width={24}
-										height={24}
-									/>
-								</Link>
+								<Link href={link.path}>{link.label}</Link>
 							</li>
 						))}
 					</ul>
 				</div>
-
-				<ul className={styles.links}>
-					{links.map((link, idx) => (
-						<li key={idx}>
-							<Link href={link.path}>{link.label}</Link>
-						</li>
-					))}
-				</ul>
 
 				<div>
 					<GradientButton>Request Invite</GradientButton>

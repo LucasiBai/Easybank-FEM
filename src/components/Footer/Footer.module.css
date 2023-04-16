@@ -70,15 +70,29 @@
 
 	.footer span div {
 		align-items: flex-start;
+		flex-direction: row;
+		gap: 7rem;
+	}
+
+	.footer span div div {
+		flex-direction: column;
+		gap: 3rem;
 	}
 
 	.footer span div:last-child {
 		align-items: flex-end;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.footer span div:last-child span {
+		width: fit-content;
 	}
 
 	.links {
 		display: grid;
 		grid-template-rows: 1fr 1fr 1fr;
 		grid-auto-flow: column;
+		column-gap: 7rem;
 	}
 }
