@@ -62,7 +62,7 @@
 	}
 
 	.footer span {
-		width: 100%;
+		width: 95%;
 		flex-direction: row;
 		justify-content: space-between;
 		max-width: 1110px;

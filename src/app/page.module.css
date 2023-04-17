@@ -87,12 +87,11 @@
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		overflow: hidden;
+		overflow-x: clip;
 	}
 
 	.main-home h3 {
 		font-size: 39px;
-		width: 100%;
 		text-align: start;
 	}
 
@@ -102,10 +101,15 @@
 		max-width: 1110px;
 	}
 
+	.main-article,
+	.sub-section > *,
+	.last-articles > * {
+		width: 95%;
+	}
+
 	/* Main Article css */
 	.main-home .main-article {
 		flex-direction: row-reverse;
-		width: 100%;
 		padding: 0;
 	}
 
@@ -130,6 +134,15 @@
 		width: 51vw;
 		height: 646px;
 	}
+	.image-container span {
+		top: 0;
+		right: -184px;
+		width: 132%;
+		height: 769px;
+	}
+	.image-container span img {
+		object-position: center !important;
+	}
 	.desktop img {
 		height: 100% !important;
 		width: 164% !important;
@@ -145,7 +158,6 @@
 
 	.sub-section article {
 		align-items: flex-start;
-		width: 100%;
 	}
 	.sub-section section {
 		flex-direction: row;
