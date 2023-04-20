@@ -87,7 +87,8 @@
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		overflow-x: clip;
+		overflow-x: hidden;
+		overflow-y: clip;
 	}
 
 	.main-home h3 {
@@ -132,7 +133,7 @@
 
 	.image-container {
 		width: 51vw;
-		height: 646px;
+		height: 614px;
 	}
 	.image-container span {
 		top: 0;
@@ -145,10 +146,10 @@
 	}
 	.desktop img {
 		height: 100% !important;
-		width: 164% !important;
+		width: 201% !important;
 		inset: 0px !important;
 		object-fit: cover !important;
-		object-position: -50px -240px !important;
+		object-position: -61px -228px !important;
 	}
 
 	/* Subsection Article css */
