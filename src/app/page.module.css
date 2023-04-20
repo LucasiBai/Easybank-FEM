@@ -137,16 +137,16 @@
 	}
 	.image-container span {
 		top: 0;
-		right: -184px;
+		right: -33%;
 		width: 132%;
 		height: 769px;
 	}
 	.image-container span img {
-		object-position: center !important;
+		object-position: center left !important;
 	}
 	.desktop img {
 		height: 100% !important;
-		width: 201% !important;
+		width: 1150px !important;
 		inset: 0px !important;
 		object-fit: cover !important;
 		object-position: -61px -228px !important;
