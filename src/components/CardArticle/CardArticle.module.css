@@ -8,6 +8,7 @@
 	cursor: pointer;
 	max-height: 350px;
 	overflow: hidden;
+	transition: color ease-in 0.3s;
 }
 
 .card-article:hover {
@@ -43,9 +44,9 @@
 .card-article h4 {
 	font-weight: 300;
 	font-size: 16px;
+	height: 100%;
 }
 
-/* TODO: Update paragraph with ellipsis */
 .card-article .card-paragraph {
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
@@ -57,6 +58,11 @@
 	max-height: 90%;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+@media only screen and (min-width: 577px) and (max-width: 950px) {
+	.card-article .card-paragraph {
+		-webkit-line-clamp: 3;
+	}
 }
 
 @media only screen and (min-width: 576px) {

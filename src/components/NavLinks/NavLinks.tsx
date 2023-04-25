@@ -7,7 +7,7 @@ function NavLinks({ links }: { links: { path: string; label: string }[] }) {
 			{links.map((link: { path: string; label: string }, idx) => (
 				<li key={idx}>
 					<Link href={link.path}>{link.label}</Link>
-					<hr className={styles.show} />
+					<hr />
 				</li>
 			))}
 		</ul>

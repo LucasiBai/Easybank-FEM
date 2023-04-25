@@ -19,7 +19,7 @@ const articleData: { icon: string; header: string; content: string }[] = [
 		icon: "/icon-budgeting.svg",
 		header: "Simple Budgeting",
 		content:
-			"See exactly where your money goes each month. Receive notifications when you're close to your hitting limits",
+			"See exactly where your money goes each month. Receive notifications when you're close to your hitting limits.",
 	},
 	{
 		icon: "/icon-onboarding.svg",
@@ -31,7 +31,7 @@ const articleData: { icon: string; header: string; content: string }[] = [
 		icon: "/icon-api.svg",
 		header: "Open API",
 		content:
-			"Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier",
+			"Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.",
 	},
 ];
 

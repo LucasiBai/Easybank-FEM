@@ -16,8 +16,10 @@
 		rgb(0 220 78) 0%,
 		rgba(15, 198, 235, 1) 100%
 	);
+	transition: opacity ease-in 0.3s;
 }
 .gradient-button button:hover {
 	opacity: 0.5;
 	cursor: pointer;
+	transition: opacity ease-out 0.3s;
 }
